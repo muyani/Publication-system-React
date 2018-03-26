@@ -1,0 +1,20 @@
+div{
+    
+}
+
+
+ul{
+   
+    list-style-type: none;
+    
+}
+li{
+    float:left;
+}
+.navigationbar{
+    padding-top:10px;
+    background-color : rgba(15, 141, 199, 0.904);
+}
+.bsClass{
+    color:rgb(40, 38, 189);
+}

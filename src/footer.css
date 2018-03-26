@@ -1,0 +1,8 @@
+.footerDiv{
+    min-height:100px;
+    background: rgb(27, 26, 26);
+}
+.footerText{
+  color: black;
+    opacity: 1;
+}

@@ -1,0 +1,27 @@
+
+
+div{ 
+  background-color: whitesmoke;
+
+
+}
+hr{
+  height: 10px;
+  color:red;
+}
+
+#footer{
+  bottom:0;
+  position: absolute;
+}
+.fill{
+  
+  min-height: 100%;
+  position: relative;
+}
+#footer:hover{
+  color:red;
+}
+#para:hover{
+  color:red;
+}
