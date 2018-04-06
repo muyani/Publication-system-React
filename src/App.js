@@ -8,6 +8,7 @@ import Mypublications from './myPublications';
 import {Container,Sticky} from 'semantic-ui-react';
 import Dashboard from './dashboard';
 import Homepage from './homepage';
+import {Router} from 'react-router-dom';
 class App extends React.Component{
   
   render(){

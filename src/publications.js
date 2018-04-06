@@ -1,8 +1,9 @@
 import React,{Component} from 'react';
-import {Item,Button} from 'semantic-ui-react';
+import {Header,Item,Button} from 'semantic-ui-react';
 import axios from 'axios';
+import {} from 'react-router-dom';
 
-const url = 'http://localhost/publicationApi/users';
+const getUrl = 'http://localhost/publicationApi/documents';
 
 class Publications extends React.Component{
   constructor(props){
@@ -13,9 +14,9 @@ class Publications extends React.Component{
     }
   }
   componentDidMount(){
-    axios.get(url).then((res)=>{
+ 
+    axios.get(getUrl).then((res)=>{
     const docs=res.data.result;
-    console.log(docs.map((doc)=>{return doc.firstname}));
     this.setState(
       {results:docs}
     );
@@ -26,14 +27,20 @@ class Publications extends React.Component{
         <Item.Group>
         {this.state.results.map((result)=> {
           return (    
-     <Item>
-       <Item.Image size='small' src="/assets/images/art.jpg"/>
+     <Item key={result.doc_id}>
+     <Item.Image size='small' src={"/assets/images/"+result.doc_id +"/art.jpg"}/>
        <Item.Content>
-         <Item.Header as='a'>{result.username}</Item.Header>
+         <Item.Header as='a'>{result.doc_title}</Item.Header>
          <Item.Description>
-           <p>{result.firstname}</p>
+           <div>
+             <Header sub>Abstract</Header>
+           <span>{result.doc_description}</span>
+           </div>
            <p>
-             {result.lastname}
+             {result.doc_url}
+            <br/>
+             {result.doc_id}
+             
            </p>
            <Button>Download PDF</Button>
          </Item.Description>

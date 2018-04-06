@@ -29,7 +29,7 @@ class Homeview extends Component {
               Home
             </Menu.Item>
             <Menu.Item name='gamepad'>
-              <Icon name='gamepad' />
+              <Icon name='write' />
               Games
             </Menu.Item>
             <Menu.Item name='camera'>
