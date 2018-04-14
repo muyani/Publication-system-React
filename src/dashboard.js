@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {Grid,Container,Sidebar,List, Segment,Header, Button, Menu, Image, Icon, } from 'semantic-ui-react'
 import './dashboard.css';
-import Header1 from './Header1';
-import Footer from './footer';
+
+
 
 class Dashboard extends Component {
   state = [{ visible: true,activeItem:'' }]
@@ -13,10 +13,9 @@ class Dashboard extends Component {
   render() {
     const { visible,activeItem } = this.state
     return (
-        <Container>
-        <Header1/>
-        <br/>
-        
+       
+     
+           
       <div>
           
         <Button onClick={this.toggleVisibility}>Menu</Button>
@@ -98,8 +97,8 @@ class Dashboard extends Component {
         </Grid.Row>
         </Grid>
       </div>
-      <Footer />
-      </Container>
+      
+     
     )
   }
 }

@@ -1,7 +1,4 @@
-div{
     
-}
-
 
 ul{
    
@@ -17,4 +14,7 @@ li{
 }
 .bsClass{
     color:rgb(40, 38, 189);
+}
+.zIndex{
+    z-index:1999999;
 }

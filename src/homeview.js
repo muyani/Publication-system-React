@@ -3,6 +3,7 @@ import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui
 import './homeview.css';
 import Publications from './publications.js';
 
+
 class Homeview extends Component {
   state = { visible: false }
 
@@ -12,7 +13,7 @@ class Homeview extends Component {
     const { visible } = this.state
     return (
       <div >
-        <Button onClick={this.toggleVisibility}>Categories</Button>
+        <Button onClick={this.toggleVisibility}>Student Tools</Button>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
             as={Menu}

@@ -1,18 +1,23 @@
-import {React,Component} from 'react';
-import {Router} from 'react-router';
+import React ,{Component} from 'react';
+
 import {Button,Form,Segment} from 'semantic-ui-react';
 
-class Signin extends React.Component{
+class Signin extends Component{
+    constructor(props){
+        super(props)
+    }
     render(){
-    return  ( <Segment>
-        <Form>
-          <Form.Group widths='equal'>
-            <Form.Input fluid label='user name' placeholder='username/email' />
+    return ( <Segment size="huge">
+        <Form >
+       
+            <Form.Input label='user name' placeholder='username/email' />
             <Form.Input type='password' fluid label='password' placeholder='password' />
-          </Form.Group>
+     
           <Button type='submit'>Log in</Button>
         </Form>
-      </Segment>)  
+        </Segment>
+     )  
     }
+
 }
 export default  Signin;

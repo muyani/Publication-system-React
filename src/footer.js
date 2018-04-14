@@ -1,6 +1,8 @@
 import React ,{Component} from 'react';
 import './footer.css';
-import {Button,Grid,Menu} from 'semantic-ui-react';
+import {Icon,Button,Grid,Menu} from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
+
 
 
 class Footer extends React.Component{
@@ -25,7 +27,7 @@ class Footer extends React.Component{
             <Grid divided="vertically">
                 <Grid.Row columns={3}>
                     <Grid.Column>
-            <p className="footerText">This is the footer description</p>
+            <p className="footerText">Developed with <Icon color="red" name='like'/> by <a href="https://github.com/muyani">Muyani</a></p>
             </Grid.Column>
             </Grid.Row>
             </Grid>

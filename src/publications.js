@@ -10,7 +10,7 @@ class Publications extends React.Component{
     super(props)
     this.state={
       results:[]
-      
+
     }
   }
   componentDidMount(){
